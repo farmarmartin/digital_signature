@@ -2,7 +2,7 @@
 ## potřebné nástroje:
   xampp
   
-## Zpuštění:
+## Spuštění:
 - 1.složku "digigital" vložte do /xampp/htdocs/
 - 2.do souboru /digigital/sign/dat/data.txt napiště zprávu, kterou chcete digitálně podepsat
 - 3.v xamppu zapněte Apache a MySQL
@@ -12,3 +12,6 @@
   
 ## poznámka:
   soubor data.txt se musí ručně přepsat pro další podepisování
+  
+### autoři
+Job&Zeleňák
