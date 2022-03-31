@@ -1,7 +1,3 @@
-<?php
-    include 'verification.php';
-    echo $extId;
-?>
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -15,6 +11,11 @@
 <form action="verification.php" method="POST">
 <button type="submit" name="submit">submit</button>
 </form>
-
+<?php
+if (isset($_POST['submit'])) {
+    include 'verification.php';
+    header('Location: ' . $_SERVER['PHP_SELF']);
+    }
+?>
 </body>
 </html>
