@@ -8,10 +8,11 @@ CREATE Table IF NOT EXISTS subjekt(
 );
 
 CREATE TABLE IF NOT EXISTS certif (
-    idcertificate VARCHAR (100) UNIQUE, NOT NULL PRIMARY KEY,
+    idcertificate VARCHAR (100) NOT NULL PRIMARY KEY,
     md5_key VARCHAR(100) NOT NULL,
     hash_value varchar(100) NOT NULL,
     expires DATE NOT NULL,
     subjekt_idsubjekt INT,
+    UNIQUE (idcertificate),
     FOREIGN KEY (subjekt_idsubjekt) REFERENCES subjekt(idsubjekt)
 );
