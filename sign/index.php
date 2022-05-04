@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
         <br>
         <input type="text" name="surname" placeholder="Surname" required>
         <br>
-        <input type="date" name="expire" placeholder="Date of expiration" required>
+        <input type="date" name="expire" placeholder="Date of expiration" min="<?= date('Y-m-d'); ?>" required>
         <br>
         <button type="submit" name="submit">Submit</button>
     </form>
